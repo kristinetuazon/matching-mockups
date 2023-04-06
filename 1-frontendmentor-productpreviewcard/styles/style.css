@@ -1,10 +1,103 @@
-.test {
-  font-family: "Fraunces", sans-serif;
-  font-size: 700; }
+.main {
+  background-color: #f2ebe3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw; }
+
+.card__container {
+  height: 400px;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 2%; }
+
+.card__image {
+  object-fit: cover;
+  width: 50%;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%; }
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  gap: 0px;
+  margin: 2% 5% 6%;
+  overflow: hidden; }
+  .card__text .text__category {
+    font-family: "Montserrat", sans-serif;
+    font-size: x-small;
+    color: #6c7289;
+    letter-spacing: 5px; }
+  .card__text .text__title {
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    color: black;
+    line-height: 30px;
+    margin: 0; }
+  .card__text .text__description {
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    color: #6c7289;
+    line-height: 20px; }
+  .card__text .text__currentprice {
+    font-family: "Fraunces", serif;
+    font-size: 25px;
+    color: #3c8067;
+    margin-top: 0px;
+    margin-bottom: 0; }
+  .card__text .text__pastprice {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #6c7289;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    text-decoration: line-through; }
+
+.card__price {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.card__button {
+  margin-top: 10%;
+  background-color: #3c8067;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding: 10px;
+  border-radius: 4%;
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .card__button .button__icon {
+    width: 12px;
+    margin-right: 7px; }
 
 .attribution {
-  font-size: 11px;
-  text-align: center; }
+  font-size: 11px; }
+  .attribution a {
+    color: #3e52a3; }
 
-.attribution a {
-  color: #3c8067; }
+@media only screen and (max-width: 600px) {
+  .card__container {
+    height: auto;
+    width: 90vw;
+    flex-direction: column; }
+  .card__image {
+    object-fit: fit;
+    height: 250px;
+    width: 100%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%; }
+  .card__button {
+    padding: 16px;
+    border-radius: 5%; } }

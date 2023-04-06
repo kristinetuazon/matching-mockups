@@ -1,20 +1,133 @@
+$font-montserrat: "Montserrat", sans-serif;
+$font-fraunces: "Fraunces", serif;
 $primary-cyan: hsl(158, 36%, 37%);
 $primary-cream: hsl(30, 38%, 92%);
 $neutral-darkblue: hsl(212, 21%, 14%);
 $neutral-darkgrey: hsl(228, 12%, 48%);
 $neutral-white: hsl(0, 0%, 100%);
-$font-montserrat: 'Monteserrat', sans-serif;
-$font-fraunces: 'Fraunces', sans-serif;
 
-.test {
-  font-family: $font-fraunces;
-  font-size: 700;
+.main {
+  background-color: $primary-cream;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card__container {
+  height:400px;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  background-color: $neutral-white;
+  border-radius: 2%;
+}
+
+.card__image {
+  object-fit: cover;
+  // height: 300px;
+  width: 50%;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  gap: 0px;
+  margin: 2% 5% 6%;
+
+  overflow: hidden;
+  .text__category {
+    font-family: $font-montserrat;
+    font-size: x-small;
+    color: $neutral-darkgrey;
+    letter-spacing: 5px;
+  }
+  .text__title {
+    font-family: $font-fraunces;
+    font-size: 30px;
+    color: black;
+    line-height: 30px;
+    margin: 0;
+  }
+  .text__description {
+    font-family: $font-montserrat;
+    font-size: small;
+    color: $neutral-darkgrey;
+    line-height: 20px;
+  }
+  .text__currentprice {
+    font-family: $font-fraunces;
+    font-size: 25px;
+    color: $primary-cyan;
+    margin-top:0px;
+    margin-bottom:0;
+  }
+  .text__pastprice {
+    font-family: $font-montserrat;
+    font-size: 12px;
+    color: $neutral-darkgrey;
+    margin-top:0px;
+    margin-left: 20px;
+    margin-bottom:0;
+    text-decoration: line-through;
+  }
+}
+
+.card__price{
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: space-between;
+}
+
+.card__button{
+  margin-top: 10%;
+  background-color: $primary-cyan;
+  font-family: $font-montserrat;
+  color: white;
+  padding: 10px;
+  border-radius: 4%;
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .button__icon{
+    width: 12px;
+    margin-right:7px;
+  }
 }
 
 .attribution {
   font-size: 11px;
-  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
-.attribution a {
-  color: $primary-cyan;
+
+@media only screen and (max-width: 600px) {
+  .card__container {
+    height:auto;
+    width: 90vw;
+    flex-direction: column;
+  }
+  .card__image {
+    object-fit: fit;
+    height: 250px;
+    width: 100%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+  }
+  .card__button{
+    padding: 16px;
+    border-radius: 5%;
+  }
 }
