@@ -6,6 +6,12 @@ $neutral-darkblue: hsl(212, 21%, 14%);
 $neutral-darkgrey: hsl(228, 12%, 48%);
 $neutral-white: hsl(0, 0%, 100%);
 
+.test {
+  font-family: $font-montserrat;
+  font-size: 700;
+}
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
