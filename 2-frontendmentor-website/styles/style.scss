@@ -13,22 +13,40 @@ body {
   display: flex;
   flex-direction: column;
   .body__row1 {
-    grid-template-columns: repeat(9, fr1);
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
 
     .body__picture1 {
-      height:70vh;
+      width: 60%;
+      object-fit: cover;
+      // max-height:100%;
     }
-    .body__textbox{
+    .body__textbox1 {
       background-color: $primary-white;
-      height: 70vh;
-      width: 30vh;
+      width: 40%;
+      padding: 30px;
     }
-
   }
   .body__row2 {
-    grid-template-columns: repeat(9, fr1);
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+
+    .body__picture2 {
+      width: 30%;
+      object-fit: cover;
+    }
+
+    .body__textbox2 {
+      background-color: $primary-white;
+      width: 40%;
+    }
+
+    .body__picture3 {
+      width: 30%;
+      object-fit: cover;
+    }
   }
 }
 

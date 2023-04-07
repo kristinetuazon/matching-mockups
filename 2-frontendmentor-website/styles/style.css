@@ -6,17 +6,29 @@ body {
   display: flex;
   flex-direction: column; }
   body .body__row1 {
-    grid-template-columns: repeat(9, fr1);
-    display: grid; }
+    display: flex;
+    flex-direction: row;
+    height: 70vh; }
     body .body__row1 .body__picture1 {
-      height: 70vh; }
-    body .body__row1 .body__textbox {
+      width: 60%;
+      object-fit: cover; }
+    body .body__row1 .body__textbox1 {
       background-color: white;
-      height: 70vh;
-      width: 30vh; }
+      width: 40%;
+      padding: 30px; }
   body .body__row2 {
-    grid-template-columns: repeat(9, fr1);
-    display: grid; }
+    display: flex;
+    flex-direction: row;
+    height: 30vh; }
+    body .body__row2 .body__picture2 {
+      width: 30%;
+      object-fit: cover; }
+    body .body__row2 .body__textbox2 {
+      background-color: white;
+      width: 40%; }
+    body .body__row2 .body__picture3 {
+      width: 30%;
+      object-fit: cover; }
 
 .navbar {
   display: relative;
