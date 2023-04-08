@@ -15,7 +15,36 @@ body {
     body .body__row1 .body__textbox1 {
       background-color: white;
       width: 40%;
-      padding: 30px; }
+      padding: 4em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body .body__row1 .body__textbox1 .textbox1__title {
+        font-family: "League Spartan", sans-serif;
+        font-weight: 600;
+        font-size: 35px;
+        margin: 0; }
+      body .body__row1 .body__textbox1 .textbox1__description {
+        font-family: "League Spartan", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #a1a1a1; }
+      body .body__row1 .body__textbox1 .textbox1__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        body .body__row1 .body__textbox1 .textbox1__link .link__text {
+          margin: 0;
+          font-family: "League Spartan", sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.5;
+          color: black;
+          letter-spacing: 10px;
+          margin-right: 10px; }
+        body .body__row1 .body__textbox1 .textbox1__link .link__arrow {
+          height: 9px; }
   body .body__row2 {
     display: flex;
     flex-direction: row;
@@ -24,8 +53,25 @@ body {
       width: 30%;
       object-fit: cover; }
     body .body__row2 .body__textbox2 {
+      width: 40%;
       background-color: white;
-      width: 40%; }
+      width: 40%;
+      padding: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body .body__row2 .body__textbox2 .textbox2__title {
+        font-family: "League Spartan", sans-serif;
+        letter-spacing: 7px;
+        font-weight: 600;
+        font-size: 12px;
+        margin: 0; }
+      body .body__row2 .body__textbox2 .textbox2__description {
+        font-family: "League Spartan", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #a1a1a1; }
     body .body__row2 .body__picture3 {
       width: 30%;
       object-fit: cover; }

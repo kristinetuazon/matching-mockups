@@ -25,7 +25,47 @@ body {
     .body__textbox1 {
       background-color: $primary-white;
       width: 40%;
-      padding: 30px;
+      padding: 4em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .textbox1__title {
+        font-family: $font-leaugespartan;
+        font-weight: 600;
+        font-size: 35px;
+        margin: 0;
+        // color:$primary-verydarkgrey;
+      }
+
+      .textbox1__description {
+        font-family: $font-leaugespartan;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.5;
+        color: $primary-darkgrey;
+      }
+
+      .textbox1__link {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+
+        .link__text {
+          margin:0;
+          font-family: $font-leaugespartan;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.5;
+          color: $primary-black;
+          letter-spacing: 10px;
+          margin-right: 10px;
+        }
+
+        .link__arrow{
+          height: 9px;
+        }
+      }
     }
   }
   .body__row2 {
@@ -39,8 +79,28 @@ body {
     }
 
     .body__textbox2 {
+      width: 40%;
       background-color: $primary-white;
       width: 40%;
+      padding: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .textbox2__title{
+        font-family: $font-leaugespartan;
+        letter-spacing: 7px;
+          font-weight: 600;
+          font-size: 12px;
+          margin:0;
+      }
+
+      .textbox2__description{
+        font-family: $font-leaugespartan;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.5;
+        color: $primary-darkgrey;
+      }
     }
 
     .body__picture3 {
