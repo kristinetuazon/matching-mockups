@@ -35,7 +35,6 @@ body {
         font-weight: 600;
         font-size: 35px;
         margin: 0;
-        // color:$primary-verydarkgrey;
       }
 
       .textbox1__description {
@@ -47,12 +46,12 @@ body {
       }
 
       .textbox1__link {
-        display:flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
 
         .link__text {
-          margin:0;
+          margin: 0;
           font-family: $font-leaugespartan;
           font-weight: 400;
           font-size: 12px;
@@ -62,8 +61,27 @@ body {
           margin-right: 10px;
         }
 
-        .link__arrow{
+        .link__arrow {
           height: 9px;
+        }
+      }
+
+      .textbox1__navigation {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left:0px;
+        bottom:0px;
+
+        .navigation__button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          height: 3em;
+          width: 3em;
+          padding: 2px;
+          background-color: $primary-black;
         }
       }
     }
@@ -86,15 +104,16 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      .textbox2__title{
+
+      .textbox2__title {
         font-family: $font-leaugespartan;
         letter-spacing: 7px;
-          font-weight: 600;
-          font-size: 12px;
-          margin:0;
+        font-weight: 600;
+        font-size: 12px;
+        margin: 0;
       }
 
-      .textbox2__description{
+      .textbox2__description {
         font-family: $font-leaugespartan;
         font-weight: 300;
         font-size: 12px;
@@ -109,6 +128,7 @@ body {
     }
   }
 }
+
 
 .navbar {
   display: relative;
