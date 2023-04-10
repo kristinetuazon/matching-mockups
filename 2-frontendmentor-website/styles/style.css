@@ -45,21 +45,25 @@ body {
           margin-right: 10px; }
         body .body__row1 .body__textbox1 .textbox1__link .link__arrow {
           height: 9px; }
-      body .body__row1 .body__textbox1 .textbox1__navigation {
+    body .body__row1 .textbox1__navigation {
+      display: flex;
+      flex-direction: row;
+      left: 0px;
+      height: 10vh;
+      margin: 0;
+      position: absolute;
+      z-index: 1;
+      top: 64%;
+      left: 57%; }
+      body .body__row1 .textbox1__navigation .navigation__button {
         display: flex;
         flex-direction: row;
-        position: relative;
-        left: 0px;
-        bottom: 0px; }
-        body .body__row1 .body__textbox1 .textbox1__navigation .navigation__button {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          height: 3em;
-          width: 3em;
-          padding: 2px;
-          background-color: black; }
+        align-items: center;
+        justify-content: center;
+        height: 3em;
+        width: 6em;
+        padding: 3px;
+        background-color: black; }
   body .body__row2 {
     display: flex;
     flex-direction: row;

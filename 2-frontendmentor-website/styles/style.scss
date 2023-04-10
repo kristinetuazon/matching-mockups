@@ -65,26 +65,32 @@ body {
           height: 9px;
         }
       }
-
-      .textbox1__navigation {
+    }
+    .textbox1__navigation {
+      display: flex;
+      flex-direction: row;
+      left: 0px;      
+      height: 10vh; 
+      margin: 0;  
+      position: absolute;    
+      z-index:1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+      top: 64%;
+      left: 57%;
+  
+      .navigation__button {
         display: flex;
         flex-direction: row;
-        position: relative;
-        left:0px;
-        bottom:0px;
-
-        .navigation__button {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          height: 3em;
-          width: 3em;
-          padding: 2px;
-          background-color: $primary-black;
-        }
+        align-items: center;
+        justify-content: center;
+        height: 3em;
+        width: 6em;
+        // width:280%;
+        padding: 3px;
+        background-color: $primary-black;
       }
-    }
+
+  }
+  
   }
   .body__row2 {
     display: flex;
@@ -128,7 +134,6 @@ body {
     }
   }
 }
-
 
 .navbar {
   display: relative;
