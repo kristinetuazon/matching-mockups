@@ -5,6 +5,7 @@ $primary-black: hsl(0, 0%, 0%);
 $primary-darkgrey: hsl(0, 0%, 63%);
 $body-copy: 12px;
 
+
 body {
   margin: 0px;
   background-color: black;
@@ -12,6 +13,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+
   .body__row1 {
     display: flex;
     flex-direction: row;
@@ -20,7 +22,6 @@ body {
     .body__picture1 {
       width: 60%;
       object-fit: cover;
-      // max-height:100%;
     }
     .body__textbox1 {
       background-color: $primary-white;
@@ -135,13 +136,14 @@ body {
 
 .navbar {
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  width: 100vw;
-  margin: 70px;
+  padding: 15%;
+
   .navbar__logo {
     margin-right: 50px;
   }
+
   .navbar__hamburger {
     visibility: hidden;
   }
@@ -159,43 +161,75 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+
   .navbar {
-    display: grid;
 
     .navbar__hamburger {
       visibility: visible;
-      justify-content: center;
     }
     .navbar__logo {
-      justify-self: center;
-      align-items: center;
-      justify-content: center;
+    padding-left:35%;
+    
+    margin-right: 0px;
+  
     }
     .navbar__link {
       visibility: hidden;
     }
   }
+
+
   body {
     .body__row1 {
       display: flex;
       flex-direction: column;
-      height: 100vh;
-      background-color: aqua;
+      width: 100%;
+      height:100%;
 
       .body__picture1 {
         height: 50vh;
         object-fit: cover;
-        width: 100vw;
-      
+        width: auto;
       }
       .body__textbox1 {
+        height: 100%;
+        width: auto;
         height: 50vh;
-        width: 100vw;
-        padding: 4em;
         display: flex;
+        padding:3em;
         flex-direction: column;
         justify-content: center;
+        gap: 30px;
+      }
+      .textbox1__navigation {
+        visibility: hidden;
+      }
+    }
+
+    .body__row2 {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+
+      .body__picture2 {
+        height: 50vh;
+        object-fit: cover;
+        width: 100%;
+      
+      }
+      .body__textbox2 {
+        width: auto;
+        display: flex;
+        padding:3em;
+        flex-direction: column;
+        justify-content: center;
+        gap:30px;
+      }
+      .body__picture3 {
+        height: 50vh;
+        object-fit: cover;
+        width: 100%;
       }
     }
   }
