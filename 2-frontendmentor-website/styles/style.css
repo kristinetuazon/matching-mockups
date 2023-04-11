@@ -96,14 +96,15 @@ body {
       object-fit: cover; }
 
 .navbar {
-  display: relative;
   background-color: transparent;
   position: fixed;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   margin: 70px; }
   .navbar .navbar__logo {
     margin-right: 50px; }
+  .navbar .navbar__hamburger {
+    visibility: hidden; }
   .navbar .navbar__link {
     text-decoration: none;
     color: white;
@@ -114,3 +115,32 @@ body {
     border-bottom: 2px solid currentColor;
     display: inline-block;
     line-height: 1; }
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: grid; }
+    .navbar .navbar__hamburger {
+      visibility: visible;
+      justify-content: center; }
+    .navbar .navbar__logo {
+      justify-self: center;
+      align-items: center;
+      justify-content: center; }
+    .navbar .navbar__link {
+      visibility: hidden; }
+  body .body__row1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: aqua; }
+    body .body__row1 .body__picture1 {
+      height: 50vh;
+      object-fit: cover;
+      width: 100vw; }
+    body .body__row1 .body__textbox1 {
+      height: 50vh;
+      width: 100vw;
+      padding: 4em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }

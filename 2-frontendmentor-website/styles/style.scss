@@ -69,14 +69,14 @@ body {
     .textbox1__navigation {
       display: flex;
       flex-direction: row;
-      left: 0px;      
-      height: 10vh; 
-      margin: 0;  
-      position: absolute;    
-      z-index:1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+      left: 0px;
+      height: 10vh;
+      margin: 0;
+      position: absolute;
+      z-index: 1;
       top: 64%;
       left: 57%;
-  
+
       .navigation__button {
         display: flex;
         flex-direction: row;
@@ -88,9 +88,7 @@ body {
         padding: 3px;
         background-color: $primary-black;
       }
-
-  }
-  
+    }
   }
   .body__row2 {
     display: flex;
@@ -136,14 +134,16 @@ body {
 }
 
 .navbar {
-  display: relative;
   background-color: transparent;
   position: fixed;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   margin: 70px;
   .navbar__logo {
     margin-right: 50px;
+  }
+  .navbar__hamburger {
+    visibility: hidden;
   }
   .navbar__link {
     text-decoration: none;
@@ -156,5 +156,47 @@ body {
     border-bottom: 2px solid currentColor;
     display: inline-block;
     line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: grid;
+
+    .navbar__hamburger {
+      visibility: visible;
+      justify-content: center;
+    }
+    .navbar__logo {
+      justify-self: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .navbar__link {
+      visibility: hidden;
+    }
+  }
+  body {
+    .body__row1 {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: aqua;
+
+      .body__picture1 {
+        height: 50vh;
+        object-fit: cover;
+        width: 100vw;
+      
+      }
+      .body__textbox1 {
+        height: 50vh;
+        width: 100vw;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
   }
 }
