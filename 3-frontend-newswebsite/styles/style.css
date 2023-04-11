@@ -1,0 +1,15 @@
+body {
+  background-color: #fffdfa;
+  font-family: "Inter", sans-serif;
+  margin: 10%; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%; }
+  .nav .nav__menu .nav__link {
+    margin-left: 25px;
+    color: #5d5f79;
+    text-decoration: none; }

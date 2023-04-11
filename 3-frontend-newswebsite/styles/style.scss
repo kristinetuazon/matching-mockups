@@ -1,0 +1,31 @@
+$primary-softorange: hsl(35, 77%, 62%);
+$primary-softred: hsl(5, 85%, 63%);
+$neutral-offwhite: hsl(36, 100%, 99%);
+$neutral-greyblue: hsl(233, 8%, 79%);
+$neutral-darkgreyblue: hsl(236, 13%, 42%);
+$neutral-darkblue: hsl(240, 100%, 5%);
+$font-paragraph: 15px;
+$font-Inter: "Inter", sans-serif;
+
+body {
+  background-color: $neutral-offwhite;
+  font-family: $font-Inter;
+  margin: 10%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  .nav__menu {
+    .nav__link {
+      margin-left: 25px;
+      color: $neutral-darkgreyblue;
+      text-decoration: none;
+    }
+  }
+}
+
+
