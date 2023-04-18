@@ -14,7 +14,38 @@ body {
     color: #5d5f79;
     text-decoration: none; }
 
-.main {
+.layout__toprow {
+  display: grid;
+  height: 70%;
+  grid-auto-columns: 2fr; }
+
+main {
   margin: 0;
   display: flex;
-  flex-direction: horizontal; }
+  flex-direction: column; }
+  main .article__image {
+    height: 10%; }
+  main .article__main {
+    display: flex;
+    flex-direction: row;
+    gap: 5%; }
+    main .article__main .article__headline {
+      font-family: "Inter", sans-serif;
+      color: #00001a;
+      font-weight: 800;
+      font-size: xx-large;
+      letter-spacing: 0.1px; }
+    main .article__main .article__summary {
+      font-family: "Inter", sans-serif;
+      color: #5d5f79;
+      font-weight: 400;
+      line-height: 25px; }
+      main .article__main .article__summary .article__button {
+        background-color: #f15e50;
+        font-family: "Inter", sans-serif;
+        color: white;
+        border: 1px;
+        font-size: small;
+        padding: 10px 25px 10px 25px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase; }

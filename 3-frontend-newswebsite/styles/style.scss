@@ -28,11 +28,46 @@ body {
   }
 }
 
-.main{
-  margin:0;
-  display:flex;
-  flex-direction: horizontal;
-  
+.layout__toprow{
+  display: grid;
+  height:70%;
+  grid-auto-columns: 2fr;
 }
-
-
+main {
+  margin: 0;
+  display: flex;
+  
+  flex-direction: column;
+  .article__image {
+    height: 10%;
+  }
+  .article__main {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    .article__headline {
+      font-family: $font-Inter;
+      color: $neutral-darkblue;
+      font-weight: 800;
+      font-size: xx-large;
+      letter-spacing: 0.1px;
+    }
+    .article__summary {
+      font-family: $font-Inter;
+      color: $neutral-darkgreyblue;
+      font-weight: 400;
+      line-height: 25px;
+      .article__button {
+        background-color: $primary-softred;
+        font-family: $font-Inter;
+        color: white;
+        // border-radius: 1em;
+        border: 1px;
+        font-size: small;
+        padding: 10px 25px 10px 25px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
